@@ -33,7 +33,7 @@ class OurHomeSpider(scrapy.Spider):
         selector = Selector(text=content)
         ads_items = selector.css('.NewBuildingItem__Wrapper-sc-o36w9y-0.iYDe')
 
-        for item in ads_items[:5]:
+        for item in ads_items:
             href = item.css('.NewBuildingItem__MainTitle-sc-o36w9y-6.KYYzh::attr(href)').get()
             if 'https://xn--80az8a.xn--d1aqf.xn--p1ai/' not in href:
                 href = 'https://xn--80az8a.xn--d1aqf.xn--p1ai/' + href
