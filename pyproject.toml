@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Barzabel <Kochenko1995@mail.ru>"]
 readme = "README.md"
+packages = [{include = "our_home_parsing"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -15,6 +16,8 @@ webdriver-manager = "^4.0.1"
 scrapy-selenium = "^0.0.7"
 scrapy-playwright = "^0.0.36"
 
+[tool.poetry.scripts]
+parser = "our_home_parsing.main:main"
 
 [build-system]
 requires = ["poetry-core"]
