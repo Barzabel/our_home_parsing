@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "testnashdom"
+version = "0.1.0"
+description = ""
+authors = ["Barzabel <Kochenko1995@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scrapy = "2.11.2"
+scrapy-impersonate = "1.2.3"
+selenium = "^4.22.0"
+fake-useragent = "^1.5.1"
+webdriver-manager = "^4.0.1"
+scrapy-selenium = "^0.0.7"
+scrapy-playwright = "^0.0.36"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
